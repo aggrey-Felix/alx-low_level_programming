@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	char k = 'a';
+	char c = 'a';
 
-	while (k <= 'z')
+	while (c <= 'z')
 	{
-		if (k != 'q' && k != 'e')
+		if (c != 'q' && c != 'e')
 		{
-			putchar(k);
+			putchar(c);
 		}
 		c++;
 	}
