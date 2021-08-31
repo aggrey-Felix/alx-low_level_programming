@@ -6,21 +6,12 @@
  * Description: uses the holbertong header file
  * that contains the function _putchar
  * Return: 0.
-*/
-
-
-int main(void)
-{
-	char str[] = "Holberton";
-	int i;
-
-	i = 0;
-	while (str[i])
-	{
-		_putchar(str[i]);
-		++i;
-	}
-	_putchar('\n');
-
-	return (0);
+ */
+int main(void) {
+  _putchar("Holberton\n");
+  return 0;
 }
+
+
+
+
