@@ -1,1 +1,1 @@
-the nested while loops and the functions, lets do this
+nested loops and fuctions of c language
