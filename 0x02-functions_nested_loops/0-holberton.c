@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
 * main - Entry point
 * write a program tha prints Holberton, followed by a new line.
