@@ -1,68 +1,51 @@
 #include "main.h"
+
 /**
- * print_nums - prints out 3, 2, and 1 digit numbers with spaces
- * @num: this is the multiplied number
- * Return: void just pring to console.
-*/
-void print_nums(int num)
+  * print_times_table - Prints a multiplication table up to param
+  * @n: The number to be treated
+  *
+  * Return: Number matrix
+  */
+void print_times_table(int n)
 {
 	int x, y, z;
 
-	if (num > 99)
+	if (n >= 0 && n <= 14)
 	{
-		x = num / 100 + '0';
-		y = num / 10 % 10  + '0';
-		z = num % 10 + '0';
-		_putchar(' ');
-		_putchar(x);
-		_putchar(y);
-		_putchar(z);
-	}
-	else if (num > 9)
-	{
-		x = num / 10 + '0';
-		y = num % 10 + '0';
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(x);
-		_putchar(y);
-	}
-	else
-	{
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(num + '0');
-	}
-}
-/**
- * print_times_table - print the times table depending on input
- * @n: input that will dicate size of times table.
- *
- * print_nums
- * Return: void, print out to console.
-*/
-void print_times_table(int n)
-{
-	int i, j, num;
-
-	if (n >= 0 && n < 16)
-	{
-		for (i = 0; i <= n; ++i)
+		for (x = 0; x <= n; x++)
 		{
-			for (j = 0; j <= n; ++j)
+			for (y = 0; y <= n; y++)
 			{
-				num = i * j;
-				if (j == 0)
-					_putchar('0');
-				else
-					print_nums(num);
-
-				if (j < n)
+				z = x * y;
+				if (z > 99)
+				{
 					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else if (z > 9)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
 				else
-					_putchar('\n');
+				{
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
+				}
 			}
+			_putchar('\n');
 		}
 	}
 }
