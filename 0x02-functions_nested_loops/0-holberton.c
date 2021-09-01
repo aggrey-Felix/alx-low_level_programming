@@ -1,18 +1,18 @@
-
 #include "holberton.h"
 /**
- * main - prints the string "Holberton" from a character array.
- * Return: 0 on success.
- */
+* main - Entry point
+* write a program tha prints Holberton, followed by a new line.
+* Return: Always (Success)
+*/
 int main(void)
 {
-	char c[] = "_putchar";
-	int i;
+	char *ch = "_putchar";
 
-	for (i = 0; i < 9; i++)
+	while (*ch)
 	{
-		_putchar(c[i]);
+		_putchar(*ch);
+		ch++;
 	}
 	_putchar('\n');
-	return (0);
+return (0);
 }

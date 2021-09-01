@@ -1,1 +1,1 @@
-nested loops and fuctions of c language
+nested loops and fucntions in the c programming,, it gets better and better
