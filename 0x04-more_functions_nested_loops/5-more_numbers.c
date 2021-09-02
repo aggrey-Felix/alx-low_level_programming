@@ -1,30 +1,29 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- *more_numbers - from 0-14 x10
+ * more_numbers - prints 01234567891011121314\n x10
  *
- *Description:0-14 x10
- *
- *Return:void
- *
+ * Return: void
  */
+
+
 void more_numbers(void)
 {
-	int j, k;
+	char a, b, c, i;
 
-	j = 0;
-
-	while (j < 10)
+	for (i = 0; i < 10; i++)
 	{
-		k = 0;
-
-		while (k < 15)
+		for (c = 0; c <= 14; c++)
 		{
-			if (k >= 10)
-				_putchar('0' + (k / 10));
-				_putchar('0' + (k % 10));
-				k++;
+			if (c < 10)
+				b = c;
+			else
+			{
+				a = c / 10; b = c % 10;
+				_putchar('0' + a);
+			}
+			_putchar('0' + b);
 		}
 		_putchar('\n');
-		j++;
 	}
 }
