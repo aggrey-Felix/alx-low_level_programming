@@ -1,2 +1,2 @@
 more on functions and loops
-its gonna be fun
+and nested loops too
