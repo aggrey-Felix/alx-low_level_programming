@@ -6,21 +6,15 @@
  */
 void reverse_array(int *a, int n)
 {
-int i;
-putchar(“Reversed array is : \n”);
-for (i = n - 1; i > = 0; i –)
-{
-putchar(“ % d\n”, a[i]);
-}
-}
-int main(void);
-{
-int n, *a, i;
-scanf(“ % d”, &n);
-for (i = 0; i < n; i++)
-{
-scanf(“ % d”, a + i);
-}
-reverse(n, a);
-return (0);
+	int i = 0, t;
+
+	n = n - 1;
+	while (i < n)
+	{
+		t = *(a + i);
+		*(a + i) = *(a + n);
+		*(a + n) = t;
+		i++;
+		n--;
+	}
 }
