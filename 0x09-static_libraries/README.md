@@ -1,2 +1,1 @@
-here comes the libraries used in the c programming
-language
+the static libraries in C programming
